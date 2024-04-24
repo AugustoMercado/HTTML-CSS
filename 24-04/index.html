@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prueba 24/4</title>
+</head>
+<body>
+    <!--MULTIMEDIA-->
+
+    <section>
+
+        <div>
+    
+        <!--src (ruta de la imagen) alt (palabras claves para buscar la imagen)-->
+        <!--
+            <img src="imag/Fondo_menu.png" alt="imagen de un samurai con fondo negro y rojo." width="500" height="500"> 
+        -->
+        </div>
+        <div>
+            <!-- 
+                <audio src="imag/LAST CHANCE.mp3" controls muted></audio>
+            -->
+        </div>
+    
+        <div>
+            <!--forma de insertar un video-->
+            <!--<video src="imag/Prueba final.mp4" controls poster="" width="300" height="300"></video>
+            -->
+        </div>
+    
+        <div>
+            <!--forma de insertar un video de youtube-->
+            <!--<iframe width="560" height="315" src="https://www.youtube.com/embed/x_OwcYTNbHs?si=k4Kq2j6HVuBJaHYZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>        </div>
+            -->
+        </div>
+    
+        <div>
+            <!-- forma de poner un mapaa-->
+            <!---
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13116.511877067675!2d-58.4515826!3d-34.7271686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1713961472125!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        -->
+        </div>
+
+    </section>
+
+    
+    <!--Abrir tablas-->
+    <div>
+        <table border="2">
+            <!--Forma de ingresar una cabecera-->
+            
+            <tr>
+                <!--Forma de agregar las columnas-->
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Edad</th>
+            </tr>
+
+            <tr>
+                <!--Con esta forma ingresamos los datos en las columnas-->
+                <td >Juan</td>
+                <td>Pérez</td>
+                <td>30</td>
+                <!--<td rowspan="" ></td>
+                nos permite combinar dos filas--> 
+                
+                <!--<td colspan=""> </td>
+                nos permite combinar columnas-->
+            </tr>
+            <tr>
+                <td>María</td>
+                <td>Gómez</td>
+                <td>25</td>
+            </tr>
+            <tr>
+                <td>Carlos</td>
+                <td>Rodríguez</td>
+                <td>35</td>
+            </tr>
+            <tr>
+                <td>Laura</td>
+                <td>Martínez</td>
+                <td>28</td>
+            </tr>
+        </table>
+    </div>
+
+<!--FORMULARIOS-->
+    <form action="link" method="post">
+        <div>
+        <!--le indicamos al usuario que debe informacion debe ir -->
+            <label for="Email">Email <span>*</span></label> <br>
+        <!--Le damos una casilla para completar con dicha informacion-->
+            <input id="email" size="30" name="email" type="email" required> <br>
+            
+            <label for="contrasenia">Contraseña <span>*</span></label> <br>
+            <input id="contrasenia" size="30" name="contrasenia" type="password"> <br>
+            
+            <label for="Nombre">Nombre <span>*</span></label> <br>
+            <input id="nombre" size="30" name="Nombre" type="text"> <br>
+
+            <label for="Apellido">Apellido <span>*</span></label> <br>
+            <input id="apellido" size="30" name="apellido" type="text"> <br>
+
+            <label for="Date">Fecha De Nacimiento <span>*</span></label> <br>
+            <input id="calendar" size="30" name="calendar" type="date"> <br>
+        </div>
+
+        <div>
+            <h2>Deje su consulta</h2>
+            <!--forma de agregar un box donde se puede escribir un parrafo 
+            <textarea name="textarea" id="textarea" cols="50" rows="20"></textarea>
+            -->
+        </div>
+
+        <div>
+            <select>
+            <option value="1" > Mañana </option>
+            <option value="2" selected>  Tarde  </option>
+            <option value="3" > Noche </option>
+            </select>
+
+        </div>
+
+        <!--botones-->
+        <div>
+            <input type="submit" value="enviar">
+            <input type="reset" value="borrar">
+        </div>
+
+        <!--Hacerlos parte de un mismo grupo-->
+        <fieldset>
+
+        <legend>Opciones</legend>
+
+        <div>
+        <!--Forma de agregar un check box (multiples elecciones)-->
+        <h2>Selcciona la opcion correcta</h2>
+        <input type="checkbox" name="opcion" value="1" >Lab 1 <br>
+        <input type="checkbox" name="opcion" value="2" >Lab 2 <br>
+        <input type="checkbox" name="opcion" value="3" >Lab 3 <br>
+        
+
+        </div>
+
+        <div>
+        <!--Forma de agregar un radio (unas ola eleccion)-->
+        <h2>Selcciona la opcion correcta</h2>
+        <input type="radio" name="opcion" value="1" checked>Lab 1 <br>
+        <input type="radio" name="opcion" value="2" >Lab 2 <br>
+        <input type="radio" name="opcion" value="3" >Lab 3 <br>
+        
+
+        </div>
+        </fieldset>
+
+    </form>
+
+</body>
+</html>
